@@ -1,0 +1,22 @@
+{% extends 'layout.html'%}
+{% load static %}
+
+{% block content %}
+    <form action="/create/" method="post" style="width: 300px">
+        {% csrf_token %}
+        <br/>
+        {{ form.title }}
+        <br/>
+        {{ form.price }}
+        <br/>
+        {{ form.category }}
+        <br/>
+        {{ form.description }}
+        <br/>
+        {{ form.size }}
+        <br/>
+        {{ form.date_end }}
+        <br/>
+    <button type="submit" class="btn btn-success">Create</button>
+    </form>
+{% endblock %}
