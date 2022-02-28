@@ -129,7 +129,7 @@ def confirm(request):
         user.save()
         context = {
             'message_type': 'success',
-            'message': 'You are successfuly activated!!!'
+            'message': 'SUCCESS'     #'You are successfuly activated!!!'
         }
     except:
         context = {
